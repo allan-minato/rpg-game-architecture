@@ -11,19 +11,19 @@ export default abstract class Archetype {
     this._cost = 0;
   }
 
-  get name(): string {
-    return this._name;
+  public get name(): string {
+    return this.name;
   }
 
-  get special(): number {
-    return this._special;
+  public get special(): number {
+    return this.special;
   }
 
-  get cost(): number {
-    return this._cost;
+  public get cost(): number {
+    return this.cost;
   }
-  
-  static createdArchetypeInstances(): number { 
+
+  static createArchetypeInstances(): number {
     throw new Error('Not implemented');
   }
 
